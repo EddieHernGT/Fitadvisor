@@ -1,0 +1,33 @@
+.Banner{
+  display: flex;
+  justify-items: end;
+  align-items: center;
+  margin: 5rem 0 5rem 2rem;
+}
+
+.ft-Title{
+  font-size: 70px;
+  text-align: left;
+  font-family: 'Bebas Neue', cursive;
+  padding-right: 7rem;
+}
+.imgDer{
+  flex: 80%;
+  height: 100%;
+  width: 50%;
+  border-top-left-radius: 7%;
+  border-bottom-left-radius: 7%;
+}
+
+.carouselImage{
+  height: 500px;
+  object-fit: cover;
+
+}
+
+/*Para menor tamanio de pantallas*/
+@media screen and (max-width: 768px){
+  .Banner{
+    flex-wrap: wrap;
+  }
+}

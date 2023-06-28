@@ -1,0 +1,29 @@
+.container-user{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.map-container h2{
+    text-align: center;
+}
+.container-userInfo{
+    margin-top: 5rem;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+.med-data{
+    margin-top: 3rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+.med-data li{
+    padding: 1rem;
+}
+.loading-screan{
+    height: 20vh;
+}

@@ -1,0 +1,34 @@
+
+.formContainer h1{
+    text-align: center;
+}
+.formImage{
+    max-width: 100%;
+    height: auto;
+    margin: 0 1rem 0 0 ;
+}
+.formContainer .container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.switch-form{
+    margin-top: 2rem;
+    text-align: end;
+}
+.switch-form a{
+    text-decoration: underline;
+    color: #212529;
+}
+
+/*Para menor tamanio de pantallas*/
+@media screen and (max-width: 768px){
+    .formContainer{
+        margin: 5rem;
+        padding: 0 1rem;
+        max-height: 100%;
+    }
+}

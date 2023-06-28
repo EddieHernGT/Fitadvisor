@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres
+    env_file: .env
+    volumes:
+      - ./data/pg_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+  gui:
+    image: node
+    working_dir: /app
+    command: "npm run start"
+    volumes:
+      - ./front-fitadvisor:/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+  api:
+    image:  api
+    build: ./api-fitadvisor
+    working_dir: /var/www/
+    volumes:
+      - ./api-fitadvisor:/var/www/
+      - ./api-fitadvisor/public/:/var/www/html/
+    ports:
+      - 8200:80
+    depends_on:
+      - db

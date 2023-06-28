@@ -1,0 +1,47 @@
+.mainFooter{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    min-height: 200px;
+    padding: 5rem;
+    background-color: #212529;
+    color: aliceblue;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenedorLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenerdorIconos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenerdorIconos a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+.subFooter{
+    background-color: #111416;
+    padding: 1rem;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.subFooter a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.formContainer{
+    margin: 5rem;
+    padding: 0 20rem;
+    max-height: 100%;
+}
+.container-loader{
+    margin-top: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
